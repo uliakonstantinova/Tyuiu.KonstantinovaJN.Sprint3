@@ -12,7 +12,7 @@ namespace Tyuiu.KonstantinovaJN.Sprint3.Task0.V5.Lib
             {
                 sumSeries = sumSeries + Math.Pow(1 / Math.Sin(i), 2);
             }
-            return sumSeries;
+            return Math.Round(sumSeries, 3);
         }
     }
 }
