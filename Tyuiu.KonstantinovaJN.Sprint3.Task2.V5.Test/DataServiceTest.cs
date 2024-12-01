@@ -16,7 +16,7 @@ namespace Tyuiu.KonstantinovaJN.Sprint3.Task2.V5.Test
             int stopValue = 20;
 
             double res = ds.GetSumSeries(value, startValue, stopValue);
-            double wait = 20.324;
+            double wait = 20.802;
 
             Assert.AreEqual(wait, res);
         }
