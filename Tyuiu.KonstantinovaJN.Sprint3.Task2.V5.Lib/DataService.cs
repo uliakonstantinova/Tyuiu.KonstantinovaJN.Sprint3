@@ -7,14 +7,14 @@ namespace Tyuiu.KonstantinovaJN.Sprint3.Task2.V5.Lib
         public double GetSumSeries(double value, int startValue, int stopValue)
         {
             double sumSeries = 0;
-            int k = 1;
+            int k = startValue;
             do
             {
                 double u = Math.Pow(value, k) + 1;
                 double l = u * Math.Cos(k);
                 sumSeries += l;
-                startValue++;
-            } while (sumSeries <= stopValue);
+                k++;
+            } while (k <= stopValue);
             return Math.Round(sumSeries, 3);
         }
     }
